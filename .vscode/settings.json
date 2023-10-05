@@ -1,0 +1,11 @@
+{
+    "editor.renderLineHightlight": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.indentSize": "tabSize",
+
+    "[javascript]": { "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, },
+
+    "[javascriptreact]": { "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, },
+}
