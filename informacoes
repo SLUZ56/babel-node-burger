@@ -23,3 +23,24 @@ Para rodar novamente digite :
 
 Obs.:
 O docker tem que estar rodando para a tabela aparecer.
+
+configurações para o node com babel:
+resolvi o problema do crached no código
+isntalando além do que já havia 
+babel-cli babel-preset 
+instalei o babel-preset-env e configurei
+o .babelrc como está agora. O problema foi resolvido!
+
+Esse era o erro apresentado:
+O erro "O construtor de classe não pode ser invocado sem novo" ocorre quando a propriedade de destino em tsconfig. json está definido como inferior a es6 ou você instancia uma classe sem o operador new. Para resolver o erro, defina target como es6 e use o operador new ao instanciar classes.
+
+
+ --inspect-brk
+
+
+     return _possibleConstructorReturn(this, (User.__proto__ || 
+Object.getPrototypeOf(User)).apply(this, arguments));
+
+                           
+TypeError: Class constructor Model cannot be invoked without 'new'
+    at new User
