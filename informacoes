@@ -1,0 +1,25 @@
+Informações importantes:
+
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+
+docker run --name codeburger-postgres -e POSTGRES_PASSWORD=postgres -d postgres
+
+yarn add pg pg-hstore
+
+
+**Para rodar a migration no terminal digite:
+yarn sequelize db:migrate
+
+Depois no postbird atualize e voce verá que foi criado suas
+configurações.
+
+**Para desfazer as migrations todas elas: no terminal digite:
+yarn sequelize db:migrate:undo:all desfaz toda a tabela
+yarn sequelize db:migrate:undo  só desfaz a última alteração
+
+Para rodar novamente digite :
+ yarn sequelize db:migrate
+
+Obs.:
+O docker tem que estar rodando para a tabela aparecer.
